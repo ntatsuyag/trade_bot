@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+    bot:
+        build: .
+        volumes:
+            - ./bot:/home/bot
+        tty: true
+        stdin_open: true
+        container_name: trade_bot_dev_container
